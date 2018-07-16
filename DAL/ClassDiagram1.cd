@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DAL.DALCompra" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAMAAAAAAAAAEAAAABAAhAAAAABAAAAAAAAAIAAA=</HashCode>
+      <FileName>DALCompra.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.DadosDaConexao" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAIAAAAAAABAQIAAAAAAAAAAA=</HashCode>
+      <FileName>DadosDaConexao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.DALCategoria" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEACAAAAAAAEAAAABAABAAAAAAAAAAgAAAAIAAA=</HashCode>
+      <FileName>DALCategoria.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DALProduto" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DAL.DALCliente" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAEAAAABAABAACAABAAAABAAAAIAAA=</HashCode>
+      <FileName>DALCliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.DALConexao">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAiQAAAAAAEAAABAFAAAAAAABAADAAAA=</HashCode>
+      <FileName>DALConexao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.DALFornecedor">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAgAAAAAAEAAAABAABAAAAQBAAAAAAAAAIAAA=</HashCode>
+      <FileName>DALFornecedor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.DALItensCompra" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAgAAAAAEAAAABIABAAAAACAAAAAAAAAIAAA=</HashCode>
+      <FileName>DALItensCompra.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DALCompra" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DAL.DALItensVenda" Collapsed="true">
+    <Position X="10" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAEACAABAABAAAAACAAAAAAACEIAAA=</HashCode>
+      <FileName>DALItensVenda.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DALVendas" />
+      <Property Name="DALCliente" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DAL.DALParcelasCompra" Collapsed="true">
+    <Position X="0.5" Y="10.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAFCAAAAAAAAEAAAABAABAAAAAgAAQAAAAAAIAAA=</HashCode>
+      <FileName>DALParcelasCompra.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DALItensCompra" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DAL.DALParcelasVendas" Collapsed="true">
+    <Position X="13.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAFAAACAAAAAEAAAABAABAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>DALParcelasVendas.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DALItensVenda" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DAL.DALProduto" Collapsed="true">
+    <Position X="5.25" Y="4.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAABAEAAAAAAAAAEAAAABAABAAAAAAAAAAAAAAIIAAA=</HashCode>
+      <FileName>DALProduto.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DALFornecedor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DAL.DALSubCategoria" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAQAEAAAAAAAAAEABAABAABAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>DALSubCategoria.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DALCategoria" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DAL.DALTipoPagamento" Collapsed="true">
+    <Position X="2.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAEAAAABAABAAAAAAAAAAACAAAIAAA=</HashCode>
+      <FileName>DALTipoPagamento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DALItensVenda" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DAL.DALUnidadeDeMedida" Collapsed="true">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGACAQAAAAAEAAAABAABAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>DALUnidadeDeMedida.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DALProduto" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DAL.DALVendas" Collapsed="true">
+    <Position X="13.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAMAAAgAAAAAEAAAABAAhAAAAAAAAAAAAAAAIgAA=</HashCode>
+      <FileName>DALVendas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
